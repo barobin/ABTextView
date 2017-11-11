@@ -3,7 +3,6 @@
 Auto growing text view for iOS.
 
 <img src="./Readme/screen1.png" alt="Demo 1" width="375"/>
-<img src="./Readme/screen2.png" alt="Demo 2" width="375"/>
 
 ## Features
 
@@ -11,9 +10,13 @@ Auto growing text view for iOS.
 - 2 resizing mode: using height or line count
 - supports storyboards
 
+## Requirements
+- Xcode 8.0
+- Swift 3.0
+
 ## Usage
 ```
-see ABTextViewExample project
+see ABTextViewExample example project
 ```
 
 ## Authors

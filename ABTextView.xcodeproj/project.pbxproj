@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2007B3881EE7F6A2002F566A /* ABTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2007B3861EE7F6A2002F566A /* ABTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2007B3B21EE945DE002F566A /* ABLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3AE1EE945DE002F566A /* ABLayoutManager.swift */; };
+		2007B3B31EE945DE002F566A /* ABMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3AF1EE945DE002F566A /* ABMessageInputView.swift */; };
+		2007B3B41EE945DE002F566A /* ABSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3B01EE945DE002F566A /* ABSeparatorView.swift */; };
+		2007B3B51EE945DE002F566A /* ABTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3B11EE945DE002F566A /* ABTextView.swift */; };
+		2007B3B91EE945FD002F566A /* CGSize+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3B81EE945FD002F566A /* CGSize+extension.swift */; };
+		2007B3BB1EE9461A002F566A /* CGRect+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3BA1EE9461A002F566A /* CGRect+extension.swift */; };
+		2007B3BD1EE9463B002F566A /* SendButtonSizeInfo+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3BC1EE9463B002F566A /* SendButtonSizeInfo+extension.swift */; };
+		2007B3BF1EE9465C002F566A /* UIEdgeInsets+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007B3BE1EE9465C002F566A /* UIEdgeInsets+extension.swift */; };
+		208E26D31EE975A6008C7CBD /* NSNotification+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E26D21EE975A6008C7CBD /* NSNotification+extension.swift */; };
+		208E26D51EE97F6B008C7CBD /* UIScrollView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E26D41EE97F6B008C7CBD /* UIScrollView+extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2007B3831EE7F6A2002F566A /* ABTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2007B3861EE7F6A2002F566A /* ABTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTextView.h; sourceTree = "<group>"; };
+		2007B3871EE7F6A2002F566A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2007B3AE1EE945DE002F566A /* ABLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABLayoutManager.swift; sourceTree = "<group>"; };
+		2007B3AF1EE945DE002F566A /* ABMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABMessageInputView.swift; sourceTree = "<group>"; };
+		2007B3B01EE945DE002F566A /* ABSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSeparatorView.swift; sourceTree = "<group>"; };
+		2007B3B11EE945DE002F566A /* ABTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTextView.swift; sourceTree = "<group>"; };
+		2007B3B81EE945FD002F566A /* CGSize+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+extension.swift"; sourceTree = "<group>"; };
+		2007B3BA1EE9461A002F566A /* CGRect+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+extension.swift"; sourceTree = "<group>"; };
+		2007B3BC1EE9463B002F566A /* SendButtonSizeInfo+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SendButtonSizeInfo+extension.swift"; sourceTree = "<group>"; };
+		2007B3BE1EE9465C002F566A /* UIEdgeInsets+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+extension.swift"; sourceTree = "<group>"; };
+		208E26D21EE975A6008C7CBD /* NSNotification+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+extension.swift"; sourceTree = "<group>"; };
+		208E26D41EE97F6B008C7CBD /* UIScrollView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2007B37F1EE7F6A2002F566A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2007B3791EE7F6A2002F566A = {
+			isa = PBXGroup;
+			children = (
+				2007B3851EE7F6A2002F566A /* ABTextView */,
+				2007B3841EE7F6A2002F566A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2007B3841EE7F6A2002F566A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2007B3831EE7F6A2002F566A /* ABTextView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2007B3851EE7F6A2002F566A /* ABTextView */ = {
+			isa = PBXGroup;
+			children = (
+				2007B3AC1EE94591002F566A /* Classes */,
+				2007B3AD1EE945C2002F566A /* Extensions */,
+				2007B3861EE7F6A2002F566A /* ABTextView.h */,
+				2007B3871EE7F6A2002F566A /* Info.plist */,
+			);
+			path = ABTextView;
+			sourceTree = "<group>";
+		};
+		2007B3AC1EE94591002F566A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2007B3B11EE945DE002F566A /* ABTextView.swift */,
+				2007B3AF1EE945DE002F566A /* ABMessageInputView.swift */,
+				2007B3AE1EE945DE002F566A /* ABLayoutManager.swift */,
+				2007B3B01EE945DE002F566A /* ABSeparatorView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2007B3AD1EE945C2002F566A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2007B3B81EE945FD002F566A /* CGSize+extension.swift */,
+				2007B3BA1EE9461A002F566A /* CGRect+extension.swift */,
+				2007B3BC1EE9463B002F566A /* SendButtonSizeInfo+extension.swift */,
+				2007B3BE1EE9465C002F566A /* UIEdgeInsets+extension.swift */,
+				208E26D21EE975A6008C7CBD /* NSNotification+extension.swift */,
+				208E26D41EE97F6B008C7CBD /* UIScrollView+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2007B3801EE7F6A2002F566A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2007B3881EE7F6A2002F566A /* ABTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2007B3821EE7F6A2002F566A /* ABTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2007B38B1EE7F6A2002F566A /* Build configuration list for PBXNativeTarget "ABTextView" */;
+			buildPhases = (
+				2007B37E1EE7F6A2002F566A /* Sources */,
+				2007B37F1EE7F6A2002F566A /* Frameworks */,
+				2007B3801EE7F6A2002F566A /* Headers */,
+				2007B3811EE7F6A2002F566A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABTextView;
+			productName = ABTextView;
+			productReference = 2007B3831EE7F6A2002F566A /* ABTextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2007B37A1EE7F6A2002F566A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alexander Barobin";
+				TargetAttributes = {
+					2007B3821EE7F6A2002F566A = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2007B37D1EE7F6A2002F566A /* Build configuration list for PBXProject "ABTextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2007B3791EE7F6A2002F566A;
+			productRefGroup = 2007B3841EE7F6A2002F566A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2007B3821EE7F6A2002F566A /* ABTextView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2007B3811EE7F6A2002F566A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2007B37E1EE7F6A2002F566A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E26D31EE975A6008C7CBD /* NSNotification+extension.swift in Sources */,
+				2007B3BF1EE9465C002F566A /* UIEdgeInsets+extension.swift in Sources */,
+				2007B3BB1EE9461A002F566A /* CGRect+extension.swift in Sources */,
+				2007B3BD1EE9463B002F566A /* SendButtonSizeInfo+extension.swift in Sources */,
+				2007B3B91EE945FD002F566A /* CGSize+extension.swift in Sources */,
+				208E26D51EE97F6B008C7CBD /* UIScrollView+extension.swift in Sources */,
+				2007B3B21EE945DE002F566A /* ABLayoutManager.swift in Sources */,
+				2007B3B31EE945DE002F566A /* ABMessageInputView.swift in Sources */,
+				2007B3B51EE945DE002F566A /* ABTextView.swift in Sources */,
+				2007B3B41EE945DE002F566A /* ABSeparatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2007B3891EE7F6A2002F566A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2007B38A1EE7F6A2002F566A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2007B38C1EE7F6A2002F566A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ABTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.barobin.ABTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2007B38D1EE7F6A2002F566A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ABTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.barobin.ABTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2007B37D1EE7F6A2002F566A /* Build configuration list for PBXProject "ABTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2007B3891EE7F6A2002F566A /* Debug */,
+				2007B38A1EE7F6A2002F566A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2007B38B1EE7F6A2002F566A /* Build configuration list for PBXNativeTarget "ABTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2007B38C1EE7F6A2002F566A /* Debug */,
+				2007B38D1EE7F6A2002F566A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2007B37A1EE7F6A2002F566A /* Project object */;
+}

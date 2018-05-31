@@ -11,8 +11,8 @@ Auto growing text view for iOS.
 - supports storyboards
 
 ## Requirements
-- Xcode 8.0
-- Swift 3.0
+- Xcode 9.0
+- Swift 4.0
 
 ## Usage
 ```

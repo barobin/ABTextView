@@ -45,7 +45,7 @@ public class ABTextView: UIView {
 
     public weak var delegate: ABTextViewDelegate?
     
-    public var keyboardType: UIKeyboardType {
+    @objc public var keyboardType: UIKeyboardType {
         get {
             return self.textView.keyboardType
         }
@@ -54,7 +54,7 @@ public class ABTextView: UIView {
         }
     }
     
-    public var returnKeyType: UIReturnKeyType {
+    @objc public var returnKeyType: UIReturnKeyType {
         get {
             return self.textView.returnKeyType
         }
@@ -63,13 +63,13 @@ public class ABTextView: UIView {
         }
     }
     
-    public var useLinesCountForHeight: Bool = false {
+    @objc public var useLinesCountForHeight: Bool = false {
         didSet {
             self.measureText(force: true)
         }
     }
     
-    public var attributedText: NSAttributedString? {
+    @objc public var attributedText: NSAttributedString? {
         didSet {
             if self.attributedTextSet {
                 self.textView.attributedText = attributedText
@@ -80,7 +80,7 @@ public class ABTextView: UIView {
         }
     }
     
-    public var placeholderText: String? {
+    @objc public var placeholderText: String? {
         didSet {
             if let text = self.attributedText {
                 if text.length > 0 {
@@ -161,10 +161,10 @@ public class ABTextView: UIView {
     
     //MARK: Public
     
-    public func measureText(force: Bool = false) {
+    @objc public func measureText(force: Bool = false) {
         var text: NSAttributedString! = self.attributedText
         if (text == nil || text.length == 0) {
-            text = NSAttributedString(string: "Sample", attributes: [NSFontAttributeName: self.textView.font!])
+            text = NSAttributedString(string: "Sample", attributes: [NSAttributedStringKey.font: self.textView.font!])
         }
         
         self.layoutManager.storageText = text

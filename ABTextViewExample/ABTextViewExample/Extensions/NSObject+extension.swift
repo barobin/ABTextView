@@ -10,7 +10,7 @@ import UIKit
 
 extension NSObject {
     
-    public class var className: String {
+    @objc public class var className: String {
         guard let result = String(describing: self).components(separatedBy: ".").last else {
             return String(describing: self)
         }
@@ -18,7 +18,7 @@ extension NSObject {
         return result
     }
     
-    public var className: String {
+    @objc public var className: String {
         return type(of: self).className
     }
     

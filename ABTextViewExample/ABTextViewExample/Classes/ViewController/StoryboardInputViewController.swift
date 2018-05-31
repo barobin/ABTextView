@@ -20,9 +20,9 @@ class StoryboardInputViewController: UIViewController {
     
     @IBOutlet weak var constraintInputMessageViewBottom: NSLayoutConstraint!
     
-    let tableViewData: TableViewData = TableViewData()
+    @objc let tableViewData: TableViewData = TableViewData()
     
-    let keyboardObserver: KeyboardEventsObserver = KeyboardEventsObserver()
+    @objc let keyboardObserver: KeyboardEventsObserver = KeyboardEventsObserver()
     
     deinit {
         self.tableViewData.unsubscibeForContentSizeChanges(delegate: self)
@@ -82,15 +82,15 @@ class StoryboardInputViewController: UIViewController {
 //MARK: - StoryboardInputViewController (TableViewDataDelegate)
 extension StoryboardInputViewController: TableViewDataDelegate {
     
-    var t_inputMessageView: ABMessageInputView? {
+    @objc var t_inputMessageView: ABMessageInputView? {
         return self.inputMessageView
     }
     
-    var t_tableView: UITableView! {
+    @objc var t_tableView: UITableView! {
         return self.tableView
     }
     
-    var t_bottomInputOffset: CGFloat {
+    @objc var t_bottomInputOffset: CGFloat {
         get {
             return self.constraintInputMessageViewBottom.constant
         }
@@ -99,7 +99,7 @@ extension StoryboardInputViewController: TableViewDataDelegate {
         }
     }
     
-    var t_inputHeight: CGFloat {
+    @objc var t_inputHeight: CGFloat {
         get {
             return self.constraintInputMessageViewHeight.constant
         }
@@ -112,11 +112,11 @@ extension StoryboardInputViewController: TableViewDataDelegate {
 //MARK: - StoryboardInputViewController (KeyboardEventsObserverDelegate)
 extension StoryboardInputViewController: KeyboardEventsObserverDelegate {
     
-    var k_tableView: UITableView! {
+    @objc var k_tableView: UITableView! {
         return self.tableView
     }
     
-    var k_bottomInputOffset: CGFloat {
+    @objc var k_bottomInputOffset: CGFloat {
         get {
             return self.constraintInputMessageViewBottom.constant
         }
@@ -125,7 +125,7 @@ extension StoryboardInputViewController: KeyboardEventsObserverDelegate {
         }
     }
     
-    var k_inputHeight: CGFloat {
+    @objc var k_inputHeight: CGFloat {
         get {
             return self.constraintInputMessageViewHeight.constant
         }

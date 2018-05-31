@@ -24,9 +24,9 @@ protocol KeyboardEventsObserverDelegate: UIViewControllerDataSource {
     
     weak var delegate: KeyboardEventsObserverDelegate?
     
-    private(set) var subscibed: Bool = false
+    @objc private(set) var subscibed: Bool = false
     
-    func subscribe() {
+    @objc func subscribe() {
         if self.subscibed {
             return
         }
@@ -38,7 +38,7 @@ protocol KeyboardEventsObserverDelegate: UIViewControllerDataSource {
         self.subscibed = true
     }
     
-    func unsubscribe() {
+    @objc func unsubscribe() {
         if !self.subscibed {
             return
         }

@@ -28,13 +28,13 @@ class TableViewData: NSObject {
     
     fileprivate var sections = [TableViewSection]()
     
-    private(set) var subscribedForContentSizeChanges: Bool = false
+    @objc private(set) var subscribedForContentSizeChanges: Bool = false
     
     deinit {
         self.unsubscibeForContentSizeChanges()
     }
     
-    func subscribeForContentSizeChanges() {
+    @objc func subscribeForContentSizeChanges() {
         if self.subscribedForContentSizeChanges {
             return
         }
@@ -84,7 +84,7 @@ class TableViewData: NSObject {
 //MARK: - TableViewData ()
 extension TableViewData {
     
-    func initializeSections() {
+    @objc func initializeSections() {
         self.sections.removeAll()
         
         let alignTopItem = TableViewItem(displayName: "align to top", identifier: "align_to_top")

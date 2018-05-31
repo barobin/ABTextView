@@ -21,15 +21,15 @@ public extension UIScrollView {
         return scrollContentSizeHeight + bottomInset - scrollViewHeight
     }
     
-    public var ext_isScrollPositionOnTop: Bool {
+    @objc public var ext_isScrollPositionOnTop: Bool {
         return self.contentOffset.y <= self.verticalOffsetForTop
     }
     
-    public var ext_isScrollPositionOnBottom: Bool {
+    @objc public var ext_isScrollPositionOnBottom: Bool {
         return self.contentOffset.y >= self.verticalOffsetForBottom
     }
     
-    public var ext_isContentSizeGreaterThanHeight: Bool {
+    @objc public var ext_isContentSizeGreaterThanHeight: Bool {
         var scrollViewHeight = self.bounds.height
         let contentInsets = self.contentInset
         scrollViewHeight -= (contentInsets.top + contentInsets.bottom)
@@ -40,11 +40,11 @@ public extension UIScrollView {
         return false
     }
     
-    public func ext_scrollToTop(animated: Bool) {
+    @objc public func ext_scrollToTop(animated: Bool) {
         self.setContentOffset(CGPoint(x: 0.0, y: self.verticalOffsetForTop), animated: animated)
     }
     
-    public func ext_scrollToBottom(animated: Bool) {
+    @objc public func ext_scrollToBottom(animated: Bool) {
         let contentSize = self.contentSize
         var boundsSize = self.bounds.size
         let contentInset = self.contentInset

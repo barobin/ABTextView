@@ -18,7 +18,7 @@ internal class ABLayoutManager: NSLayoutManager {
         }
     }
     
-    var storageText: NSAttributedString? {
+    @objc var storageText: NSAttributedString? {
         get {
             if let storage = self.storedTextStorage {
                 return storage
@@ -59,7 +59,7 @@ internal class ABLayoutManager: NSLayoutManager {
     }
     
     //MARK: Public
-    func measureSize(for size: CGSize) -> CGSize {
+    @objc func measureSize(for size: CGSize) -> CGSize {
         guard let text_container = self.textContainers.first else {
             return CGSize.zero
         }
@@ -68,7 +68,7 @@ internal class ABLayoutManager: NSLayoutManager {
         return self.usedRect(for: text_container).size
     }
     
-    func measureLinesCount(for size: CGSize) -> Int {
+    @objc func measureLinesCount(for size: CGSize) -> Int {
         guard let text_container = self.textContainers.first else {
             return 0
         }
@@ -94,7 +94,7 @@ internal class ABLayoutManager: NSLayoutManager {
         return numbersOfLines
     }
     
-    func measureSize(for width: CGFloat, linesCount count: Int) -> CGSize {
+    @objc func measureSize(for width: CGFloat, linesCount count: Int) -> CGSize {
         guard let text_container = self.textContainers.first else {
             return CGSize.zero
         }

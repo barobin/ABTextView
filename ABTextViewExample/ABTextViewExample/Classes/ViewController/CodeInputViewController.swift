@@ -112,15 +112,15 @@ class CodeInputViewController: UIViewController {
 //MARK: - CodeInputViewController (TableViewDataDelegate)
 extension CodeInputViewController: TableViewDataDelegate {
     
-    var t_inputMessageView: ABMessageInputView? {
+    @objc var t_inputMessageView: ABMessageInputView? {
         return self.inputMessageView
     }
     
-    var t_tableView: UITableView! {
+    @objc var t_tableView: UITableView! {
         return self.tableView
     }
     
-    var t_bottomInputOffset: CGFloat {
+    @objc var t_bottomInputOffset: CGFloat {
         get {
             return self.constraintInputMessageViewBottom.constant
         }
@@ -129,7 +129,7 @@ extension CodeInputViewController: TableViewDataDelegate {
         }
     }
     
-    var t_inputHeight: CGFloat {
+    @objc var t_inputHeight: CGFloat {
         get {
             return self.constraintInputMessageViewHeight.constant
         }
@@ -142,11 +142,11 @@ extension CodeInputViewController: TableViewDataDelegate {
 //MARK: - CodeInputViewController (TableViewDataDelegate)
 extension CodeInputViewController: KeyboardEventsObserverDelegate {
     
-    var k_tableView: UITableView! {
+    @objc var k_tableView: UITableView! {
         return self.tableView
     }
     
-    var k_bottomInputOffset: CGFloat {
+    @objc var k_bottomInputOffset: CGFloat {
         get {
             return self.constraintInputMessageViewBottom.constant
         }
@@ -155,7 +155,7 @@ extension CodeInputViewController: KeyboardEventsObserverDelegate {
         }
     }
     
-    var k_inputHeight: CGFloat {
+    @objc var k_inputHeight: CGFloat {
         get {
             return self.constraintInputMessageViewHeight.constant
         }

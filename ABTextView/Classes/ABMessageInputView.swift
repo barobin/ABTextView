@@ -62,9 +62,9 @@ public class ABMessageInputView: UIView {
     
     private weak var inputBackgroundView: ABMessageTextBorderView!
     
-    public private(set) weak var inputTextView: ABTextView!
+    @objc public private(set) weak var inputTextView: ABTextView!
     
-    public private(set) weak var sendButton: UIButton!
+    @objc public private(set) weak var sendButton: UIButton!
     
     private weak var inputViewLeftInset: NSLayoutConstraint!
     private weak var inputViewRightInset: NSLayoutConstraint!
@@ -84,13 +84,13 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var inputViewInsets: UIEdgeInsets = UIEdgeInsets(top: 8.0, left: 16.0, bottom: 8.0, right: 16.0) {
+    @objc public var inputViewInsets: UIEdgeInsets = UIEdgeInsets(top: 8.0, left: 16.0, bottom: 8.0, right: 16.0) {
         didSet {
             inputViewInsets = inputViewInsets.ab_safeInsets
         }
     }
     
-    public var inputTextFieldInsets: UIEdgeInsets = UIEdgeInsets(top: 2.0, left: 4.0, bottom: 2.0, right: 4.0) {
+    @objc public var inputTextFieldInsets: UIEdgeInsets = UIEdgeInsets(top: 2.0, left: 4.0, bottom: 2.0, right: 4.0) {
         didSet {
             inputTextFieldInsets = inputTextFieldInsets.ab_safeInsets
         }
@@ -102,7 +102,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var maxInputHeight: CGFloat = 88.0 {
+    @objc public var maxInputHeight: CGFloat = 88.0 {
         didSet {
             if maxInputHeight < Consts.Input.minHeight {
                 maxInputHeight = Consts.Input.minHeight
@@ -110,13 +110,13 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var maxInputLinesCount: Int = 1 {
+    @objc public var maxInputLinesCount: Int = 1 {
         didSet {
             self.inputTextView.measureText(force: true)
         }
     }
     
-    public var separatorColor: UIColor {
+    @objc public var separatorColor: UIColor {
         get {
             return self.separatorView.lineColor
         }
@@ -125,7 +125,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var inputBackgroundColor: UIColor {
+    @objc public var inputBackgroundColor: UIColor {
         get {
             return self.inputBackgroundView.inputBackgroundColor
         }
@@ -134,7 +134,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var inputBackgroundBorderColor: UIColor {
+    @objc public var inputBackgroundBorderColor: UIColor {
         get {
             return self.inputBackgroundView.inputBackgroundBorderColor
         }
@@ -143,7 +143,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var attributedText: NSAttributedString? {
+    @objc public var attributedText: NSAttributedString? {
         get {
             return self.inputTextView.attributedText
         }
@@ -159,7 +159,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var placeholderText: String? {
+    @objc public var placeholderText: String? {
         get {
             return self.inputTextView.placeholderText
         }
@@ -168,7 +168,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public var useLinesCountForHeight: Bool {
+    @objc public var useLinesCountForHeight: Bool {
         get {
             return self.inputTextView.useLinesCountForHeight
         }
@@ -177,7 +177,7 @@ public class ABMessageInputView: UIView {
         }
     }
     
-    public weak var delegate: ABMessageInputViewDelegate? {
+    @objc public weak var delegate: ABMessageInputViewDelegate? {
         didSet {
             var newInputHeight = self.inputTextView.bounds.height + self.inputViewInsets.top + self.inputViewInsets.bottom
             if (newInputHeight < Consts.Input.minHeight) {
@@ -194,7 +194,7 @@ public class ABMessageInputView: UIView {
     }
     
     #if DEBUG
-    public var showDebugBorders: Bool {
+    @objc public var showDebugBorders: Bool {
         get {
             return self.sendButton?.layer.borderWidth == 1.0
         }
@@ -350,7 +350,7 @@ public class ABMessageInputView: UIView {
     
     //MARK: Events
     
-    func onEvent_sendButtonClick(_ sender: UIButton!) {
+    @objc func onEvent_sendButtonClick(_ sender: UIButton!) {
         self.delegate?.messageInputViewDidSendText?(self)
     }
     
@@ -380,7 +380,7 @@ public class ABMessageInputView: UIView {
 //MARK: - ABMessageInputView (ABTextViewDelegate)
 extension ABMessageInputView: ABTextViewDelegate {
     
-    public func textView(_ textView: ABTextView, beginSetNewHeight height: CGFloat) {
+    @objc public func textView(_ textView: ABTextView, beginSetNewHeight height: CGFloat) {
         let inputViewInsets = self.inputViewInsets
         let inputFieldInsets = self.inputTextFieldInsets
         
@@ -404,7 +404,7 @@ extension ABMessageInputView: ABTextViewDelegate {
         self.inputTextView.frame = newInputFrame
     }
     
-    public func textView(_ growingTextView: ABTextView, endSetNewHeight height: CGFloat) {
+    @objc public func textView(_ growingTextView: ABTextView, endSetNewHeight height: CGFloat) {
         
     }
     
@@ -413,11 +413,11 @@ extension ABMessageInputView: ABTextViewDelegate {
         return (height <= self.maxInputHeight)
     }
     
-    public func textViewMaxNumberOfLinesAllowed(_ textView: ABTextView) -> Int {
+    @objc public func textViewMaxNumberOfLinesAllowed(_ textView: ABTextView) -> Int {
         return self.maxInputLinesCount
     }
     
-    public func textView(_ textView: ABTextView, didChangedAttributedText text: NSAttributedString?) {
+    @objc public func textView(_ textView: ABTextView, didChangedAttributedText text: NSAttributedString?) {
         self.delegate?.messageInputView(self, didChangeAttributedText: text)
         
         if let unwrappedText = text {
@@ -427,11 +427,11 @@ extension ABMessageInputView: ABTextViewDelegate {
         }
     }
     
-    public func textViewDidBeginEditing(_ textView: ABTextView) {
+    @objc public func textViewDidBeginEditing(_ textView: ABTextView) {
         self.delegate?.messageInputViewDidBeginEditing?(self)
     }
     
-    public func textViewDidEndEditing(_ textView: ABTextView) {
+    @objc public func textViewDidEndEditing(_ textView: ABTextView) {
         self.delegate?.messageInputViewDidEndEditing?(self)
     }
 }
@@ -441,13 +441,13 @@ private class ABMessageTextBorderView: UIView {
     
     private weak var backgroundLayer: CAShapeLayer!
     
-    var inputBackgroundColor: UIColor = UIColor(white: 242.0 / 255.0, alpha: 1.0) {
+    @objc var inputBackgroundColor: UIColor = UIColor(white: 242.0 / 255.0, alpha: 1.0) {
         didSet {
             self.backgroundLayer?.fillColor = inputBackgroundColor.cgColor
         }
     }
     
-    var inputBackgroundBorderColor: UIColor = UIColor(white: 232.0 / 255.0, alpha: 1.0) {
+    @objc var inputBackgroundBorderColor: UIColor = UIColor(white: 232.0 / 255.0, alpha: 1.0) {
         didSet {
             self.backgroundLayer?.strokeColor = inputBackgroundBorderColor.cgColor
         }

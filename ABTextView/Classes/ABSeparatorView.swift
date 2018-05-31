@@ -11,7 +11,7 @@ import UIKit
 //MARK: ABSeparatorView
 public class ABSeparatorView: UIView {
 
-    public var lineColor: UIColor = UIColor.clear {
+    @objc public var lineColor: UIColor = UIColor.clear {
         didSet {
             self.setNeedsDisplay()
         }

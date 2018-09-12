@@ -72,6 +72,13 @@ class CodeInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if #available(iOS 11.0, *) {
+            self.tableView.contentInsetAdjustmentBehavior = .never
+        }
+        else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
+        
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.className)
         self.tableView.tableFooterView = UIView()
         self.tableView.tableHeaderView = UIView()
